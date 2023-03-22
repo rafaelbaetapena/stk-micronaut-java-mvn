@@ -1,0 +1,9 @@
+name: new-web-project
+description: Estrutura base para novos projeto em micronaut + java + maven
+types:
+  - app-template
+inputs:
+  - label: Project name
+    type: text
+    name: project_name
+    default: project-name
