@@ -1,0 +1,1 @@
+# About stk-micronaut-java-mvn stack
