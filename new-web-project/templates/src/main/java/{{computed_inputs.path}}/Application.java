@@ -1,4 +1,4 @@
-package {{{{computed_inputs.base_package}}}};
+package {{computed_inputs.base_package}};
 
 import io.micronaut.runtime.Micronaut;
 
