@@ -7,3 +7,25 @@ inputs:
     type: text
     name: project_name
     default: project-name
+  - label: Micronaut version
+    type: text
+    name: micronaut_version
+    default: 3.8.7
+  - label: Version
+    type: text
+    name: version
+    default: 0.1
+  - label: Group id
+    type: text
+    name: group_id
+  - label: Artifact id
+    type: text
+    name: artifact_id
+  - label: Description
+    type: text
+    name: description
+
+computedInputs:
+  "base_package": "{{inputs.group_id}}.{{inputs.artifact_id}}"
+  "path": "{{computed_inputs.base_package | replace('.','/')}}"
+  "main_class": "{{computed_inputs.base_package}}.Application"
